@@ -1,4 +1,8 @@
-# GIT INFO
 
-> search for anybody on github by url
-> link:- https://githubinfo.herokuapp.com/
+# GIT INFO
+## Description
+> A single page simple angular application with full usage of promises(Bluebird). 
+>Search for anybody on github using username
+
+## Link
+https://githubinfo.herokuapp.com/
