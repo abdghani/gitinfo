@@ -97,3 +97,10 @@ app.controller('gitController',['$http','$scope','$q',function($http,$scope,$q){
 		alert(data);
 	}
 }]);
+
+
+app.filter("getTimeOffset", function(){
+   		return function(date){
+     	return moment(date).fromNow();
+   }
+});

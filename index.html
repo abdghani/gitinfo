@@ -8,7 +8,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script type="text/javascript" src="js/github.js"></script>
-
+<script type="text/javascript" src="js/moment.js"></script>
 </head>
 <body style="background-color:#ADD8E6">
 	<div class="container" ng-controller="gitController"  ng-init="myFunction()">
@@ -84,7 +84,8 @@
 					  				<td>
 					  				<h3>
 					  				<a href={{repo.html_url}} style="text-decoration:none">{{repo.name}}</h3></a>
-					  				<h6>{{repo.name}}</h6>
+					  				<h5>{{repo.description}}</h5>
+					  				<h6>Created : {{repo.created_at | getTimeOffset}} | Updated : {{repo.updated_at | getTimeOffset}}</h6>
 					  				</td>
 					  				<td>
 					  					<input type = "text" class = "form-control" value={{repo.clone_url}} readonly>
