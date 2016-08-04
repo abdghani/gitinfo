@@ -92,6 +92,7 @@ app.controller('gitController',['$http','$scope','$q',function($http,$scope,$q){
 
 	$scope.setFollowing = function(data){
 		$scope.follower_s = data
+		console.log(data);
 	}
 	$scope.searchs = function(data){
 		alert(data);

@@ -53,21 +53,22 @@
 				  </div>
 				</div>
 				<div class="panel panel-info">
-				  <div class="panel-heading">Followers
+				  <div class="panel-heading">Followers ( {{follower_s.length}} )
 				  </div>
 				  <div class="panel-body">
 				  	<table class="table">
 				  		<tbody>
 				  			<tr ng-repeat="follower in follower_s">
-				  				<td>
-				  					<a ng-click="search(follower.login)" style="text-decoration:none">{{follower.login}}
+				  				<td><a ng-click="search(follower.login)" href="#" style="text-decoration:none">
+				  					<img src={{follower.avatar_url}} height="30px" width="30px">
+				  					{{follower.login}}
 				  					</a>
 				  				</td>
 				  			</tr>
 				  		</tbody>	
 				  	</table>
 				  </div>
-				</div>>
+				</div>
 			  </div>
 			  
 			  <div class="col-sm-9">
