@@ -4,7 +4,7 @@ app.controller('gitController',['$http','$scope','$q',function($http,$scope,$q){
 
 	//initial setup 
 	$scope.myFunction = function(){
-		$scope.search('derekbanas');
+		$scope.search('abdghani');
 	}
 	//when searched
 	$scope.setQuery = function(query){
